@@ -42,7 +42,7 @@ jobs:
               pyinstaller Mant-ATP.spec
               chmod +x scripts/build_deb.sh
               ./scripts/build_deb.sh
-            artifact_path: mant-atp_1.0.0_amd64.deb
+            artifact_path: dist/mant-atp_1.0.0_amd64.deb
 
           - os: windows-latest
             artifact_name: Mant-ATP.exe
