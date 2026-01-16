@@ -36,7 +36,7 @@ jobs:
                 "dist/Mant-ATP.app"
             artifact_path: Mant-ATP.dmg
 
-          - os: ubuntu-latest
+          - os: ubuntu-20.04
             artifact_name: mant-atp_1.0.0_amd64.deb
             build_cmd: |
               pyinstaller Mant-ATP.spec
