@@ -19,6 +19,13 @@ hiddenimports = [
     'pandas',
     'lmfit',
     'openpyxl',
+    # Standard library modules needed by scipy/numpy
+    'unittest',
+    'unittest.mock',
+    # Scipy submodules needed by lmfit
+    'scipy.optimize',
+    'scipy.linalg',
+    'scipy.special',
 ]
 
 # Add lmfit submodules (it has many internal imports)
@@ -40,7 +47,6 @@ a = Analysis(
     excludes=[
         'tkinter',
         'test',
-        'unittest',
     ],
     win_no_prefer_redirects=False,
     win_private_assemblies=False,
